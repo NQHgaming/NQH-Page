@@ -1,0 +1,127 @@
+/* Nền gradient đen trắng */
+body {
+    background: linear-gradient(10deg, #000000, #ffffff);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Điều chỉnh container để nổi bật trên nền gradient */
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Màu trắng trong suốt */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Phần hồ sơ cá nhân */
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Tên và mô tả ngắn */
+.profile h1 {
+    margin: 10px 0 5px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.profile p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Danh sách các link */
+.links {
+    margin-top: 20px;
+}
+
+/* Nút link */
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 10px;
+    background: #2e2e2e;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    font-weight: 600; /* Chữ đậm hơn cho nút link */
+}
+/* Nút Share */
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: center;
+}
+
+/* Logo trong nút Share */
+.share-logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hiệu ứng hover cho nút Share */
+.share-button:hover {
+    background: #45A049;
+    transform: translateY(-3px);
+}
+
+/* Hiệu ứng hover cho nút link */
+.link-button:hover {
+    background: #5c5c5c;
+    transform: translateY(-3px);
+}
+
+/* Phần chân trang */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+/* Logo tròn trong nút link */
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+.link-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
