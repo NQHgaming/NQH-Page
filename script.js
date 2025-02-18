@@ -2,6 +2,7 @@ function sharePage() {
     if (navigator.share) {
         navigator.share({
             title: document.title, // Tiêu đề của trang
+            text: 'Check this out!', // Văn bản mô tả (tùy chọn)
             url: window.location.href, // URL của trang
         })
 
