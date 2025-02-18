@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'QuicksandDash';
+    src: url('font/Quicksand-Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Nền gradient đen trắng */
 body {
-    background: linear-gradient(10deg, #000000, #ffffff);
-    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(10deg, #000000, #7c7c7c);
+    font-family: 'QuicksandDash', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -106,8 +113,8 @@ body {
 /* Phần chân trang */
 footer {
     margin-top: 20px;
-    font-size: 12px;
-    color: #aaa;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
 }
 /* Logo tròn trong nút link */
 .link-button {
