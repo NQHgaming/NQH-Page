@@ -1,105 +1,84 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NQH</title>
-    <!-- Liên kết file favicon -->
-    <link rel="icon" href="images/NQH.ico" type="image/x-icon">
-    <!-- Liên kết file CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NQH Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/NQH.ico">
 </head>
 <body>
-    <div class="container">
-        <!-- Phần hồ sơ cá nhân -->
-        <div class="profile">
-            <!-- Ảnh đại diện từ thư mục images -->
-            <img src="images/NQH.jpg" alt="Ảnh đại diện của NQH" class="profile-img">
-            
-            <!-- Tên và mô tả ngắn -->
-            <h1>NQH</h1>
-            <p id="email" onclick="copyEmail()">Mail Liên Hệ : nguyenquochuy1094@gmail.com</p>
-            <p>___________________<br>CÓ BÁN ACC MINECRAFT PREMIUM LIÊN HỆ Discord,Facebook</p>
-        </div>
-        
-        <!-- Danh sách các link -->
-        <div class="links">
-            <a href="https://shopee.vn/thanhxuan899" class="link-button" target="_blank">
-                <img src="images/food.png" alt="Shop Ăn Vặt Logo" class="link-logo">
-                Shop Ăn Vặt , Bánh Tráng Mắm Đà Lạt
-            </a>
-            <a href="https://me.momo.vn/NQHDonate" class="link-button" target="_blank">
-                <img src="images/momo.png" alt="Wescan Logo" class="link-logo">
-                Momo
-            </a>
-            <a href="https://playerduo.net/nqhuyx" class="link-button" target="_blank">
-                <img src="images/playerduo.png" alt="Playerduo Logo" class="link-logo">
-                Playerduo
-            </a>
-            <a href="https://www.youtube.com/@NQH-X" class="link-button" target="_blank">
-                <img src="images/NQH.jpg" alt="NQH YouTube Logo" class="link-logo">
-                YOUTUBE: NQH
-            </a>
-            <a href="https://www.youtube.com/@NQHGame" class="link-button" target="_blank">
-                <img src="images/NQH gaming.jpg" alt="NQH Gaming YouTube Logo" class="link-logo">
-                YOUTUBE: NQH Gaming
-            </a>
-            <a href="https://www.tiktok.com/@nqh1094" class="link-button" target="_blank">
-                <img src="images/Tiktok.png" alt="Tiktok Logo" class="link-logo">
-                Tiktok
-            </a>
-            <a href="https://www.facebook.com/NQH1094" class="link-button" target="_blank">
-                <img src="images/fb.png" alt="Tiktok Logo" class="link-logo">
-                Facebook Cá Nhân
-            </a>
-            <a href="https://www.facebook.com/groups/nqhgaming" class="link-button" target="_blank">
-                <img src="images/Group Facebook.jpg" alt="Tiktok Logo" class="link-logo">
-                Group Facebook
-            </a>
-            <a href="https://discord.com/servers/lang-nqh-4-0-925172963043586058" class="link-button" target="_blank">
-                <img src="images/Discord.png" alt="Discord Logo" class="link-logo">
-                Discord
-            </a>
-            <a href="http://video.nqhgaming.online/" class="link-button" target="_blank">
-                <img src="images/taivideo.png" alt="Discord Logo" class="link-logo">
-                TẢI VIDEO YOUTUBE MIỄN PHÍ
-            </a>
-            <a href="https://gamikey.com/mua-youtube-premium/?ref=32880" class="link-button" target="_blank">
-                <img src="images/ytbpremium.png" alt="Discord Logo" class="link-logo">
-                NÂNG CẤP TÀI KHOẢN PREMIUM YOUTUBE CHÍNH CHỦ
-            </a>
-            <a href="https://gamikey.com/tai-khoan-netflix-premium/?ref=nqh1094" class="link-button" target="_blank">
-                <img src="images/Netflix.png" alt="Discord Logo" class="link-logo">
-                Mua Tài khoản Netflix Premium giá rẻ
-            </a> 
-            <button class="share-button" onclick="sharePage()">
-                <img src="images/share.png" class="share-logo" alt="Share Icon">
-                Chia Sẻ
-            </button>
-        </div>
-        
-        <!-- Quảng cáo AdSense -->
-        <div class="ads">
-           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2057090453937232"
-           crossorigin="anonymous"></script>
-           <!-- adsnqh -->
-           <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-2057090453937232"
-           data-ad-slot="2377574295"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        </div>
-
-        <!-- Phần chân trang -->
-        <footer>
-            <p>© 2025 NQH</p>
-        </footer>
+  <div class="container">
+    <div class="profile-card">
+      <img src="images/NQH.jpg" alt="Avatar" class="avatar">
+      <h1>NQH</h1>
+      <p class="bio">Liên hệ: <span onclick="copyEmail()" id="email">nguyenquochuy1094@gmail.com</span></p>
+      <p class="desc">CÓ BÁN ACC MINECRAFT PREMIUM LIÊN HỆ Discord,Facebook</p>
     </div>
 
-    <script src="script.js"></script> <!-- Liên kết tệp script.js -->
+    <div class="link-list">
+      <a href="https://shopee.vn/thanhxuan899" class="link-item" target="_blank">
+        <img src="images/food.png" alt="icon"> Shop Ăn Vặt , Bánh Tráng Mắm Đà Lạt
+      </a>
+      <a href="https://me.momo.vn/NQHDonate" class="link-item" target="_blank">
+        <img src="images/momo.png" alt="icon"> Donate Momo
+      </a>
+      <a href="https://playerduo.net/nqhuyx" class="link-item" target="_blank">
+        <img src="images/playerduo.png" alt="icon"> Donate Playerduo
+      </a>
+      <a href="https://www.youtube.com/@NQH-X" class="link-item" target="_blank">
+        <img src="images/NQH.jpg" alt="icon"> YouTube: NQH
+      </a>
+      <a href="https://www.youtube.com/@NQHGame" class="link-item" target="_blank">
+        <img src="images/NQH gaming.jpg" alt="icon"> YOUTUBE: NQH Gaming
+      </a>
+      <a href="https://www.tiktok.com/@nqh1094" class="link-item" target="_blank">
+        <img src="images/Tiktok.png" alt="icon"> Tiktok
+      </a>
+      <a href="https://www.facebook.com/NQH1094" class="link-item" target="_blank">
+        <img src="images/fb.png" alt="icon"> Facebook Cá Nhân
+      </a>
+      <a href="https://www.facebook.com/groups/nqhgaming" class="link-item" target="_blank">
+        <img src="images/Group Facebook.jpg" alt="icon"> Group Facebook
+      </a>
+      <a href="https://discord.com/servers/lang-nqh-4-0-925172963043586058" class="link-item" target="_blank">
+        <img src="images/Discord.png" alt="icon"> Discord Server
+      </a>
+      <a href="http://video.nqhgaming.online/" class="link-item" target="_blank">
+        <img src="images/taivideo.png" alt="icon"> Tải Video YouTube
+      </a>
+      <a href="https://gamikey.com/mua-youtube-premium/?ref=32880" class="link-item" target="_blank">
+        <img src="images/ytbpremium.png" alt="icon"> NÂNG CẤP TÀI KHOẢN PREMIUM YOUTUBE CHÍNH CHỦ
+      </a>
+      <a href="https://gamikey.com/tai-khoan-netflix-premium/?ref=nqh1094" class="link-item" target="_blank">
+        <img src="images/Netflix.png" alt="icon"> Mua Tài khoản Netflix Premium giá rẻ
+      </a>
+    </div>
+
+    <button class="share-button" onclick="sharePage()">
+      <img src="images/share.png" alt="share"> Chia sẻ
+    </button>
+    <!-- Quảng cáo AdSense -->
+    <div class="ads">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2057090453937232"
+        crossorigin="anonymous"></script>
+        <!-- adsnqh -->
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2057090453937232"
+        data-ad-slot="2377574295"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+
+    <footer>
+      <p>© 2025 NQH | Thiết kế bởi NQH</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
